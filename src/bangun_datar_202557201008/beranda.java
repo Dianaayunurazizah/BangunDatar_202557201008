@@ -33,9 +33,9 @@ public class beranda extends javax.swing.JFrame {
         btnpersegipanjang = new javax.swing.JButton();
         btnlingkaran = new javax.swing.JButton();
         btnexit = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnpersegi = new javax.swing.JButton();
+        btntrapesium = new javax.swing.JButton();
+        btnjajargenjang = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("beranda");
@@ -56,14 +56,14 @@ public class beranda extends javax.swing.JFrame {
         btnexit.setText("Exit");
         btnexit.addActionListener(this::btnexitActionPerformed);
 
-        jButton1.setText("Persegi");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        btnpersegi.setText("Persegi");
+        btnpersegi.addActionListener(this::btnpersegiActionPerformed);
 
-        jButton2.setText("Trapesium");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
+        btntrapesium.setText("Trapesium");
+        btntrapesium.addActionListener(this::btntrapesiumActionPerformed);
 
-        jButton3.setText("Jajar Genjang");
-        jButton3.addActionListener(this::jButton3ActionPerformed);
+        btnjajargenjang.setText("Jajar Genjang");
+        btnjajargenjang.addActionListener(this::btnjajargenjangActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -71,25 +71,21 @@ public class beranda extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(313, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnexit)
-                .addGap(15, 15, 15))
+                .addGap(35, 35, 35))
             .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addGap(60, 60, 60)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnlingkaran, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnpersegipanjang)
+                    .addComponent(btnsegitiga, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnpersegipanjang)
-                        .addGap(52, 52, 52)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnlingkaran, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnsegitiga, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(52, 52, 52)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(87, Short.MAX_VALUE))
+                    .addComponent(btnpersegi, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btntrapesium, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnjajargenjang, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,18 +95,18 @@ public class beranda extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnsegitiga)
-                    .addComponent(jButton1))
+                    .addComponent(btnpersegi))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnpersegipanjang)
-                    .addComponent(jButton2))
+                    .addComponent(btntrapesium))
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnlingkaran)
-                    .addComponent(jButton3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                    .addComponent(btnjajargenjang))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(btnexit)
-                .addGap(14, 14, 14))
+                .addGap(20, 20, 20))
         );
 
         pack();
@@ -140,17 +136,23 @@ public class beranda extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnlingkaranActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnpersegiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpersegiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        new Persegi().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnpersegiActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btntrapesiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntrapesiumActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        new Trapesium().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btntrapesiumActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnjajargenjangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnjajargenjangActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        new Jajar_Genjang().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnjajargenjangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,12 +181,12 @@ public class beranda extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnexit;
+    private javax.swing.JButton btnjajargenjang;
     private javax.swing.JButton btnlingkaran;
+    private javax.swing.JButton btnpersegi;
     private javax.swing.JButton btnpersegipanjang;
     private javax.swing.JButton btnsegitiga;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btntrapesium;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
