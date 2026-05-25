@@ -52,6 +52,8 @@ public class Segitiga extends javax.swing.JFrame {
         btnkembali.setText("Kembali");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("segitiga");
+        setLocationByPlatform(true);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

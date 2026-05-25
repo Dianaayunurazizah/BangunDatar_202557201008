@@ -57,6 +57,8 @@ public class Persegipanjang extends javax.swing.JFrame {
         tluasp.addActionListener(this::tluaspActionPerformed);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("persegipanjang");
+        setLocationByPlatform(true);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

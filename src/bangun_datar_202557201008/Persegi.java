@@ -44,6 +44,8 @@ public class Persegi extends javax.swing.JFrame {
         tluas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("persegi");
+        setLocationByPlatform(true);
 
         btnhitung.setBackground(new java.awt.Color(161, 179, 217));
         btnhitung.setText("Hitung");
