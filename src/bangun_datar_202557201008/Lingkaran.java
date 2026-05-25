@@ -45,7 +45,7 @@ public class Lingkaran extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("lingkaran");
-        setLocationByPlatform(true);
+        setLocation(new java.awt.Point(400, 200));
 
         btnhitung.setBackground(new java.awt.Color(161, 179, 217));
         btnhitung.setText("Hitung");

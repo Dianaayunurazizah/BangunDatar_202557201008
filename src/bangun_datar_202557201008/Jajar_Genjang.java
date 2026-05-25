@@ -21,6 +21,7 @@ public class Jajar_Genjang extends javax.swing.JFrame {
     }
     void reset (){
         talas.setText(null);
+        ttinggi.setText(null);
         tluas.setText(null);
     }
 
@@ -47,7 +48,7 @@ public class Jajar_Genjang extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("jajargenjang");
-        setLocationByPlatform(true);
+        setLocation(new java.awt.Point(400, 200));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
