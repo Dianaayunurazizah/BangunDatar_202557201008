@@ -69,9 +69,11 @@ public class Jajar_Genjang extends javax.swing.JFrame {
                 .addContainerGap(55, Short.MAX_VALUE))
         );
 
+        btnhitung.setBackground(new java.awt.Color(161, 179, 217));
         btnhitung.setText("Hitung");
         btnhitung.addActionListener(this::btnhitungActionPerformed);
 
+        btnreset.setBackground(new java.awt.Color(161, 179, 217));
         btnreset.setText("Reset");
         btnreset.addActionListener(this::btnresetActionPerformed);
 
@@ -79,6 +81,7 @@ public class Jajar_Genjang extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("JAJAR GENJANG");
 
+        btnkembali.setBackground(new java.awt.Color(236, 236, 90));
         btnkembali.setText("Kembali");
         btnkembali.addActionListener(this::btnkembaliActionPerformed);
 

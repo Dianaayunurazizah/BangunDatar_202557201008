@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package bangun_datar_202557201008;
-
+import java.awt.Color;
 /**
  *
  * @author Acer
@@ -16,7 +16,7 @@ public class beranda extends javax.swing.JFrame {
      * Creates new form beranda
      */
     public beranda() {
-        initComponents();
+        initComponents(); //letak konstruktor untuk mengganti warna backgroud, warna label 
     }
 
     /**
@@ -36,6 +36,7 @@ public class beranda extends javax.swing.JFrame {
         btnpersegi = new javax.swing.JButton();
         btntrapesium = new javax.swing.JButton();
         btnjajargenjang = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("beranda");
@@ -44,26 +45,35 @@ public class beranda extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("APLIKASI BANGUN DATAR");
 
+        btnsegitiga.setBackground(new java.awt.Color(161, 179, 217));
         btnsegitiga.setText("Segitiga");
         btnsegitiga.addActionListener(this::btnsegitigaActionPerformed);
 
+        btnpersegipanjang.setBackground(new java.awt.Color(161, 179, 217));
         btnpersegipanjang.setText("Persegi Panjang");
         btnpersegipanjang.addActionListener(this::btnpersegipanjangActionPerformed);
 
+        btnlingkaran.setBackground(new java.awt.Color(161, 179, 217));
         btnlingkaran.setText("Lingkaran");
         btnlingkaran.addActionListener(this::btnlingkaranActionPerformed);
 
-        btnexit.setText("Exit");
+        btnexit.setBackground(new java.awt.Color(236, 236, 90));
+        btnexit.setText("Keluar");
         btnexit.addActionListener(this::btnexitActionPerformed);
 
+        btnpersegi.setBackground(new java.awt.Color(161, 179, 217));
         btnpersegi.setText("Persegi");
         btnpersegi.addActionListener(this::btnpersegiActionPerformed);
 
+        btntrapesium.setBackground(new java.awt.Color(161, 179, 217));
         btntrapesium.setText("Trapesium");
         btntrapesium.addActionListener(this::btntrapesiumActionPerformed);
 
+        btnjajargenjang.setBackground(new java.awt.Color(161, 179, 217));
         btnjajargenjang.setText("Jajar Genjang");
         btnjajargenjang.addActionListener(this::btnjajargenjangActionPerformed);
+
+        jLabel2.setText("Silahkan memilih bangun datar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,13 +96,19 @@ public class beranda extends javax.swing.JFrame {
                     .addComponent(btntrapesium, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnjajargenjang, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(118, 118, 118)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addGap(34, 34, 34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnsegitiga)
                     .addComponent(btnpersegi))
@@ -188,5 +204,6 @@ public class beranda extends javax.swing.JFrame {
     private javax.swing.JButton btnsegitiga;
     private javax.swing.JButton btntrapesium;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

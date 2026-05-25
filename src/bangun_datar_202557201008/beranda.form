@@ -45,14 +45,21 @@
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnsegitiga" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnpersegi" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -86,6 +93,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnsegitiga">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Segitiga"/>
       </Properties>
       <Events>
@@ -94,6 +104,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnpersegipanjang">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Persegi Panjang"/>
       </Properties>
       <Events>
@@ -102,6 +115,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnlingkaran">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Lingkaran"/>
       </Properties>
       <Events>
@@ -110,7 +126,10 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnexit">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Exit"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="5a" green="ec" red="ec" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnexitActionPerformed"/>
@@ -118,6 +137,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnpersegi">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Persegi"/>
       </Properties>
       <Events>
@@ -126,6 +148,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btntrapesium">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Trapesium"/>
       </Properties>
       <Events>
@@ -134,11 +159,19 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnjajargenjang">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d9" green="b3" red="a1" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Jajar Genjang"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnjajargenjangActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Silahkan memilih bangun datar"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

@@ -45,9 +45,11 @@ public class Lingkaran extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnhitung.setBackground(new java.awt.Color(161, 179, 217));
         btnhitung.setText("Hitung");
         btnhitung.addActionListener(this::btnhitungActionPerformed);
 
+        btnreset.setBackground(new java.awt.Color(161, 179, 217));
         btnreset.setText("Reset");
         btnreset.addActionListener(this::btnresetActionPerformed);
 
@@ -55,6 +57,7 @@ public class Lingkaran extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("LINGKARAN");
 
+        btnkembali.setBackground(new java.awt.Color(236, 236, 90));
         btnkembali.setText("Kembali");
         btnkembali.addActionListener(this::btnkembaliActionPerformed);
 

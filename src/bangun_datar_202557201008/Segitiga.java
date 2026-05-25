@@ -57,6 +57,7 @@ public class Segitiga extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SEGITIGA");
 
+        btnkembalisegitiga.setBackground(new java.awt.Color(236, 236, 90));
         btnkembalisegitiga.setText("Kembali");
         btnkembalisegitiga.addActionListener(this::btnkembalisegitigaActionPerformed);
 
@@ -123,9 +124,11 @@ public class Segitiga extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
+        btnhitungS.setBackground(new java.awt.Color(161, 179, 217));
         btnhitungS.setText("Hitung");
         btnhitungS.addActionListener(this::btnhitungSActionPerformed);
 
+        btnresetS.setBackground(new java.awt.Color(161, 179, 217));
         btnresetS.setText("Reset");
         btnresetS.addActionListener(this::btnresetSActionPerformed);
 
